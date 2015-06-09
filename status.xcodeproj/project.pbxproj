@@ -15,6 +15,8 @@
 		940FB2D11B267B3900753A7C /* statusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FB2D01B267B3900753A7C /* statusTests.swift */; };
 		940FB2DB1B267EFF00753A7C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FB2DA1B267EFF00753A7C /* User.swift */; };
 		940FB2DD1B26801200753A7C /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FB2DC1B26801200753A7C /* Update.swift */; };
+		940FB2E01B26955E00753A7C /* UpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FB2DE1B26955E00753A7C /* UpdateTableViewCell.swift */; };
+		940FB2E11B26955E00753A7C /* UpdateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 940FB2DF1B26955E00753A7C /* UpdateTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		940FB2D01B267B3900753A7C /* statusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusTests.swift; sourceTree = "<group>"; };
 		940FB2DA1B267EFF00753A7C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		940FB2DC1B26801200753A7C /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		940FB2DE1B26955E00753A7C /* UpdateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateTableViewCell.swift; sourceTree = "<group>"; };
+		940FB2DF1B26955E00753A7C /* UpdateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdateTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			children = (
 				940FB2BA1B267B3900753A7C /* AppDelegate.swift */,
 				940FB2BC1B267B3900753A7C /* ViewController.swift */,
+				940FB2DE1B26955E00753A7C /* UpdateTableViewCell.swift */,
+				940FB2DF1B26955E00753A7C /* UpdateTableViewCell.xib */,
 				940FB2DA1B267EFF00753A7C /* User.swift */,
 				940FB2DC1B26801200753A7C /* Update.swift */,
 				940FB2BE1B267B3900753A7C /* Main.storyboard */,
@@ -200,6 +206,7 @@
 			files = (
 				940FB2C01B267B3900753A7C /* Main.storyboard in Resources */,
 				940FB2C51B267B3900753A7C /* LaunchScreen.xib in Resources */,
+				940FB2E11B26955E00753A7C /* UpdateTableViewCell.xib in Resources */,
 				940FB2C21B267B3900753A7C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				940FB2BD1B267B3900753A7C /* ViewController.swift in Sources */,
+				940FB2E01B26955E00753A7C /* UpdateTableViewCell.swift in Sources */,
 				940FB2BB1B267B3900753A7C /* AppDelegate.swift in Sources */,
 				940FB2DD1B26801200753A7C /* Update.swift in Sources */,
 				940FB2DB1B267EFF00753A7C /* User.swift in Sources */,

@@ -51,14 +51,19 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
  
         // var cell is the row you're goint to print i think..
-        var cell = UITableViewCell()
+        
+        
+        // TODO: make this cell reuseable
+        
+    var cell = NSBundle.mainBundle().loadNibNamed("UpdateTableViewCell", owner: self, options: nil).first as! UpdateTableViewCell
+        
+        
         
         if let updates = updates {
             var update = updates[indexPath.row]
-            cell.textLabel?.text = update.text
+            cell.updateTextLabel?.text = update.text
         }
-        
-        // TODO: make this cell reuseable
+
         
         return cell
     }
@@ -88,15 +93,17 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         // create one update:
         
-        var update = Update()
-        update.date = NSDate()
-        update.text = "Hello, World!"
-        update.user = user   // .user is a property of update, and user by itself is a variable, ojo!
+        for var i = 0; i<100; i++ {
+            var update = Update()
+            update.date = NSDate()
+            update.text = "Hello, World! \(i)"
+            update.user = user   // .user is a property of update, and user by itself is a variable, ojo!
         
-        // now append this instance of Update, i.e. update,  to the array updates:
+            // now append this instance of Update, i.e. update,  to the array updates:
         
-        updates?.append(update)
+            updates?.append(update)
+        } // for loop
         
-    }
+    } // end view did load
 }
 
