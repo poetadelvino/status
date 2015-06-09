@@ -13,6 +13,8 @@
 		940FB2C21B267B3900753A7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940FB2C11B267B3900753A7C /* Images.xcassets */; };
 		940FB2C51B267B3900753A7C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 940FB2C31B267B3900753A7C /* LaunchScreen.xib */; };
 		940FB2D11B267B3900753A7C /* statusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FB2D01B267B3900753A7C /* statusTests.swift */; };
+		940FB2DB1B267EFF00753A7C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FB2DA1B267EFF00753A7C /* User.swift */; };
+		940FB2DD1B26801200753A7C /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FB2DC1B26801200753A7C /* Update.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		940FB2CA1B267B3900753A7C /* statusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = statusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		940FB2CF1B267B3900753A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		940FB2D01B267B3900753A7C /* statusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusTests.swift; sourceTree = "<group>"; };
+		940FB2DA1B267EFF00753A7C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		940FB2DC1B26801200753A7C /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				940FB2BA1B267B3900753A7C /* AppDelegate.swift */,
 				940FB2BC1B267B3900753A7C /* ViewController.swift */,
+				940FB2DA1B267EFF00753A7C /* User.swift */,
+				940FB2DC1B26801200753A7C /* Update.swift */,
 				940FB2BE1B267B3900753A7C /* Main.storyboard */,
 				940FB2C11B267B3900753A7C /* Images.xcassets */,
 				940FB2C31B267B3900753A7C /* LaunchScreen.xib */,
@@ -214,6 +220,8 @@
 			files = (
 				940FB2BD1B267B3900753A7C /* ViewController.swift in Sources */,
 				940FB2BB1B267B3900753A7C /* AppDelegate.swift in Sources */,
+				940FB2DD1B26801200753A7C /* Update.swift in Sources */,
+				940FB2DB1B267EFF00753A7C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
