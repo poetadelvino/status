@@ -33,19 +33,33 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
+    // now create the array of updates:
+    var updates: [Update]?
+    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        
-        //  of update itemsTODO: Return count
+        // first see if array updates has been created:
+        if let updatesCount = updates?.count {
+        return updatesCount
+        }
+        // if you are here, it means the count was nil
+        // so return 0 as the nr of rows:
         return 0
-    }
+    } // function
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+ 
+        // var cell is the row you're goint to print i think..
+        var cell = UITableViewCell()
+        
+        if let updates = updates {
+            var update = updates[indexPath.row]
+            cell.textLabel?.text = update.text
+        }
         
         // TODO: make this cell reuseable
         
-        var cell = UITableViewCell()
         return cell
     }
     
@@ -55,6 +69,34 @@ class ViewController: UIViewController, UITableViewDataSource {
         // Do any additional setup after loading the view, typically from a nib.
         
         tableView.dataSource = self
+        
+        // for the future:
+        // TODO: Sample data, remove when getting real data
+        
+        
+        // initialize the array updates:
+        updates = [Update]()
+        // create a user (like NYC in tweeter), its class is User
+        var user = User()
+        user.username = "James"
+        user.name = "James Martinez"
+        user.bio = "Him"
+        user.city = "San Francisco"
+        user.link = "http://somewebsite.com"
+        
+        
+        
+        // create one update:
+        
+        var update = Update()
+        update.date = NSDate()
+        update.text = "Hello, World!"
+        update.user = user   // .user is a property of update, and user by itself is a variable, ojo!
+        
+        // now append this instance of Update, i.e. update,  to the array updates:
+        
+        updates?.append(update)
+        
     }
 }
 
