@@ -29,13 +29,17 @@ the famous one is the user model, or user class
 
 we could have given this a better name, like StatusViewController
 */
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
     // now create the array of updates:
     var updates: [Update]?
     
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat{
+        return 130
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -62,6 +66,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         if let updates = updates {
             var update = updates[indexPath.row]
             cell.updateTextLabel?.text = update.text
+            
+            if let user = update.user {
+                cell.HandleLable.text = user.username
+                cell.NameLabel.text = user.name
+            }
         }
 
         
@@ -74,6 +83,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         // Do any additional setup after loading the view, typically from a nib.
         
         tableView.dataSource = self
+        tableView.delegate = self
         
         // for the future:
         // TODO: Sample data, remove when getting real data
