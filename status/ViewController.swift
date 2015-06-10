@@ -24,11 +24,10 @@ every app has a model.
 the famous one is the user model, or user class
 
 
-
-
-
 we could have given this a better name, like StatusViewController
 */
+
+
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
